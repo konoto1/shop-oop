@@ -29,11 +29,16 @@ Design: N/A
 
 ## ✅ Tasks
 
--   [ ] layout render
-    -   [ ] header
-    -   [ ] main content
-    -   [ ] footer
--   [ ] navigation between pages
+-   [x] layout render
+    -   [x] header
+    -   [x] main content
+    -   [x] footer
+-   [x] navigation between pages
+-   [ ] product CRUD:
+    -   [ ] list
+    -   [ ] add
+    -   [ ] remove
+    -   [ ] update
 
 ## 🧰 Getting Started
 

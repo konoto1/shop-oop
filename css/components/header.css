@@ -31,3 +31,10 @@
 .main-header .link:hover {
     color: #36f;
 }
+
+.main-header .link.menu-btn {
+    background-color: #36f;
+    padding: 0.2rem 0.5rem;
+    color: #fff;
+    border-radius: 0.3rem;
+}
