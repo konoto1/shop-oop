@@ -11,8 +11,14 @@ export class PageShopList {
             const buttonsDOM = rowDOM.querySelectorAll('button');
             const amountDOM = rowDOM.querySelector('span');
 
+            buttonsDOM[0].addEventListener('click', () => {
+                const idToDecrease = rowDOM.id;
+                const LocalStorageData = localStorage.getItem('itemList');
+                const list = JSON.parse(LocalStorageData).map(item => item.id === idToDecrease ? ({ ...item, amount: item.amount === 0 ? item.amount : item.amount - 1 }) : item);
+                localStorage.setItem('itemList', JSON.stringify(list));
+                amountDOM.textContent = list.filter(item => item.id === idToDecrease)[0].amount;
 
-
+            });
 
             buttonsDOM[1].addEventListener('click', () => {
                 const idToIncrease = rowDOM.id;
